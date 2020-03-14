@@ -36,7 +36,7 @@ export default function Cart() {
                 <button type="button">
                   <MdRemoveCircleOutline size={20} color="#7159c1" />
                 </button>
-                <input type="text" readOnly value={1} />
+                <input type="text" readOnly value={300} />
                 <button>
                   <MdAddCircleOutline size={20} color="#7159c1" />
                 </button>
