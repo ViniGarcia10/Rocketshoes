@@ -20,12 +20,8 @@ export default function cart(state = [], action) {
         }
       });
 
-    case '@cart/UPDATE_AMOUNT':
+    case '@cart/UPDATE_AMOUNT_SUCCESS':
       return produce(state, draft => {
-        if (action.amount <= 0) {
-          return state;
-        }
-
         const productIndex = draft.findIndex(
           itemCart => itemCart.id === action.id
         );
